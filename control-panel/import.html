@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>منصت — استيراد البيانات</title>
+
+
+<style>
+@font-face{font-family:"Azer";src:url(assets/fonts/Azer-300.woff) format("woff");font-weight:300;font-display:swap}
+@font-face{font-family:"Azer";src:url(assets/fonts/Azer-400.woff) format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Azer";src:url(assets/fonts/Azer-500-700.woff) format("woff");font-weight:500 700;font-display:swap}
+@font-face{font-family:"Bukra";src:url(assets/fonts/Bukra-500.woff) format("woff");font-weight:500;font-display:swap}
+body{margin:0;background:#F5F4FB;line-height:1.5}
+a{color:#4C33DE}a:hover{color:#3A27B5}
+h1,h2{font-family:"Bukra","Azer","Segoe UI",Tahoma,sans-serif}
+.mlogo{background:currentColor;-webkit-mask:url(assets/munsit-logo.png) center/contain no-repeat;mask:url(assets/munsit-logo.png) center/contain no-repeat;aspect-ratio:560/213}
+</style>
+<link href="assets/munsit-logo.png" rel="icon"/></head>
+<body>
+<x-dc>
+
+<div dir="rtl" style="font-family: Azer, 'Segoe UI', Tahoma, sans-serif; color: #17142F; background: #F5F4FB; min-height: 100vh; display: flex; flex-wrap: wrap; align-items: stretch">
+<nav aria-label="القائمة الرئيسية" style="flex: 1 1 240px; max-width: 260px; min-width: 220px; background: #6045F5; color: #FFFFFF; padding: 28px 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 2px 10px 0">
+<span aria-label="منصت Ministry" class="mlogo" role="img" style="display: block; width: 132px; color: #FFFFFF"></span>
+<span style="font-size: 12px; color: #EEEBFE">لوحة الفريق الداخلية</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<a href="dashboard.html" style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 10px; color: #FFFFFF; text-decoration: none; font-size: 15px; min-height: 44px; box-sizing: border-box">
+<svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><rect height="9" rx="1.5" width="7" x="3" y="3"></rect><rect height="5" rx="1.5" width="7" x="14" y="3"></rect><rect height="9" rx="1.5" width="7" x="14" y="12"></rect><rect height="5" rx="1.5" width="7" x="3" y="16"></rect></svg>
+نظرة عامة</a>
+<a href="campaigns.html" style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 10px; color: #FFFFFF; text-decoration: none; font-size: 15px; min-height: 44px; box-sizing: border-box">
+<svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="M3 11v2a1 1 0 0 0 1 1h3l5 4V6L7 10H4a1 1 0 0 0-1 1z"></path><path d="M16 8a5 5 0 0 1 0 8"></path></svg>
+التسويق والحملات</a>
+<a href="clients.html" style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 10px; color: #FFFFFF; text-decoration: none; font-size: 15px; min-height: 44px; box-sizing: border-box">
+<svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="M3 21V7l9-4 9 4v14"></path><path d="M9 21v-6h6v6"></path></svg>
+العملاء والاستخدام</a>
+<a href="reports.html" style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 10px; color: #FFFFFF; text-decoration: none; font-size: 15px; min-height: 44px; box-sizing: border-box">
+<svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="M4 4h16v16H4z"></path><path d="M8 9h8M8 13h8M8 17h5"></path></svg>
+التقارير</a>
+<a href="import.html" style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 10px; background: #FFFFFF; color: #4C33DE; text-decoration: none; font-weight: 600; font-size: 15px; min-height: 44px; box-sizing: border-box">
+<svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="M12 15V3"></path><path d="M7 8l5-5 5 5"></path><path d="M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"></path></svg>
+استيراد البيانات</a>
+<a href="agent.html" style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 10px; color: #FFFFFF; text-decoration: none; font-size: 15px; min-height: 44px; box-sizing: border-box">
+<svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"></path><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"></path></svg>
+الوكيل الذكي</a>
+<a href="team.html" style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 10px; color: #FFFFFF; text-decoration: none; font-size: 15px; min-height: 44px; box-sizing: border-box">
+<svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7"></path><path d="M18 14a6 6 0 0 1 3.5 6"></path></svg>
+الفريق والصلاحيات</a>
+</div>
+</nav>
+<main style="flex: 999 1 560px; min-width: 0; padding: 32px 40px 48px; box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+<header style="display: flex; flex-direction: column; gap: 4px">
+<h1 style="margin: 0; font-size: 28px; font-weight: 500">استيراد البيانات</h1>
+<p style="margin: 0; color: #77739A; font-size: 15px">ارفعي ملف CSV ببيانات التسويق، وتنحسب المؤشرات منه مباشرة</p>
+</header>
+<section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px">
+<label for="csv" style="background: #fff; border: 2px dashed #D9D2FD; border-radius: 20px; padding: 32px 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; text-align: center; cursor: pointer; min-height: 220px; box-sizing: border-box">
+<div style="width: 56px; height: 56px; border-radius: 20px; background: #EEEBFE; color: #4C33DE; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" fill="none" height="26" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="26"><path d="M12 15V3"></path><path d="M7 8l5-5 5 5"></path><path d="M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"></path></svg>
+</div>
+<span style="font-size: 17px; font-weight: 700">اختاري ملف CSV</span>
+<span style="font-size: 14px; color: #77739A">{{fileLabel}}</span>
+<input accept=".csv,text/csv" data-on-change="{{onFile}}" id="csv" style="font-family: inherit; font-size: 14px; max-width: 100%" type="file"/>
+</label>
+<div style="background: #fff; border: 1px solid #E5E2F4; border-radius: 20px; box-shadow: 0 1px 2px rgba(23,20,47,.04),0 10px 30px -18px rgba(40,25,140,.28); padding: 24px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 18px; font-weight: 500">شكل الملف المطلوب</h2>
+<p style="margin: 0; font-size: 14px; color: #77739A; line-height: 1.7">صف العناوين أولاً، بالعربي أو الإنجليزي، وكل صف بعده يمثل يوماً لقناة واحدة:</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+
+<span data-as="c" data-for="columns" style="font-size: 13px; background: #F1EFFA; border-radius: 8px; padding: 6px 10px"><b>{{c.ar}}</b> · <span style="font-family: ui-monospace, monospace; color: #47436A">{{c.en}}</span></span>
+
+</div>
+<span style="font-size: 13px; color: #77739A">مثال: 2026-11-01, snapchat, 820, 31, 9, 1, 450</span>
+</div>
+</section>
+
+<div data-if="isError" role="alert" style="background: #FCEBEE; color: #D93D52; border-radius: 12px; padding: 16px 20px; font-size: 15px; font-weight: 600">{{error}}</div>
+
+
+<div data-if="isEmpty" style="background: #fff; border: 1px solid #E5E2F4; border-radius: 20px; box-shadow: 0 1px 2px rgba(23,20,47,.04),0 10px 30px -18px rgba(40,25,140,.28); padding: 40px 24px; text-align: center; color: #77739A; font-size: 15px">لما ترفعين الملف بتظهر هنا المؤشرات وأداء القنوات ومعاينة للبيانات.</div>
+
+
+<div data-if="isOk" style="display: flex; flex-direction: column; gap: 16px">
+<section aria-label="المؤشرات المحسوبة" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px">
+
+<div data-as="t" data-for="totals" style="background: #fff; border: 1px solid #E5E2F4; border-radius: 20px; box-shadow: 0 1px 2px rgba(23,20,47,.04),0 10px 30px -18px rgba(40,25,140,.28); padding: 20px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 14px; color: #77739A">{{t.label}}</span><span style="font-size: 26px; font-weight: 700">{{t.value}}</span></div>
+
+</section>
+<section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px">
+<div style="background: #fff; border: 1px solid #E5E2F4; border-radius: 20px; box-shadow: 0 1px 2px rgba(23,20,47,.04),0 10px 30px -18px rgba(40,25,140,.28); padding: 24px; display: flex; flex-direction: column; gap: 14px">
+<h2 style="margin: 0; font-size: 18px; font-weight: 500">التسجيلات حسب القناة</h2>
+
+<div data-as="c" data-for="byChannel" style="display: grid; grid-template-columns: 110px minmax(0, 1fr) 90px; align-items: center; gap: 12px; font-size: 14px">
+<span style="font-weight: 600">{{c.name}}</span>
+<div style="height: 12px; background: #F1EFFA; border-radius: 6px; overflow: hidden"><div style="{{c.bar}}"></div></div>
+<span style="text-align: left; color: #47436A">{{c.signups}} · {{c.conv}}</span>
+</div>
+
+</div>
+<div style="background: #fff; border: 1px solid #E5E2F4; border-radius: 20px; box-shadow: 0 1px 2px rgba(23,20,47,.04),0 10px 30px -18px rgba(40,25,140,.28); padding: 24px; display: flex; flex-direction: column; gap: 12px; min-width: 0">
+<h2 style="margin: 0; font-size: 18px; font-weight: 500">معاينة البيانات ({{rowCount}} صف)</h2>
+<div style="overflow-x: auto">
+<table style="width: 100%; border-collapse: collapse; font-size: 13px; min-width: 520px">
+<thead><tr style="color: #77739A; text-align: right">
+<th style="padding: 8px; font-weight: 600; border-bottom: 1px solid #E5E2F4">التاريخ</th>
+<th style="padding: 8px; font-weight: 600; border-bottom: 1px solid #E5E2F4">القناة</th>
+<th style="padding: 8px; font-weight: 600; border-bottom: 1px solid #E5E2F4">الزيارات</th>
+<th style="padding: 8px; font-weight: 600; border-bottom: 1px solid #E5E2F4">التسجيلات</th>
+<th style="padding: 8px; font-weight: 600; border-bottom: 1px solid #E5E2F4">الاشتراكات</th>
+<th style="padding: 8px; font-weight: 600; border-bottom: 1px solid #E5E2F4">المصروف</th>
+</tr></thead>
+<tbody>
+
+<tr data-as="r" data-for="preview"><td style="padding: 8px; border-bottom: 1px solid #F1EFFA">{{r.date}}</td><td style="padding: 8px; border-bottom: 1px solid #F1EFFA">{{r.channel}}</td><td style="padding: 8px; border-bottom: 1px solid #F1EFFA">{{r.visits}}</td><td style="padding: 8px; border-bottom: 1px solid #F1EFFA">{{r.signups}}</td><td style="padding: 8px; border-bottom: 1px solid #F1EFFA">{{r.subscriptions}}</td><td style="padding: 8px; border-bottom: 1px solid #F1EFFA">{{r.spend}}</td></tr>
+
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</div>
+
+</main>
+</div>
+</x-dc>
+<script data-dc-script="" data-props='{"accent":{"editor":"color","default":"#6045F5","options":["#6045F5","#4C33DE","#7C66FF"]},"$preview":{"width":1440,"height":1180}}' type="text/x-dc">
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { status: 'empty', fileName: '', rows: [], error: '' };
+  }
+  parse(text) {
+    const alias = {
+      'date': 'date', 'التاريخ': 'date',
+      'channel': 'channel', 'القناة': 'channel',
+      'visits': 'visits', 'الزيارات': 'visits',
+      'signups': 'signups', 'التسجيلات': 'signups',
+      'trials': 'trials', 'التجارب': 'trials',
+      'subscriptions': 'subscriptions', 'الاشتراكات': 'subscriptions',
+      'spend': 'spend', 'المصروف': 'spend'
+    };
+    const lines = text.replace(/^﻿/, '').split(/\r?\n/).filter((l) => l.trim() !== '');
+    if (lines.length < 2) throw new Error('الملف فاضي أو ما فيه إلا صف العناوين.');
+    const head = lines[0].split(',').map((h) => alias[h.trim().toLowerCase()] || alias[h.trim()] || null);
+    const need = ['date', 'channel', 'visits', 'signups'];
+    const missing = need.filter((n) => head.indexOf(n) === -1);
+    if (missing.length) throw new Error('أعمدة ناقصة في الملف: ' + missing.join('، '));
+    const num = (v) => { const n = parseFloat(String(v || '').replace(/[^\d.\-]/g, '')); return isNaN(n) ? 0 : n; };
+    return lines.slice(1).map((line) => {
+      const cells = line.split(',');
+      const row = {};
+      head.forEach((k, i) => { if (k) row[k] = (cells[i] || '').trim(); });
+      return {
+        date: row.date || '', channel: row.channel || 'غير محدد',
+        visits: num(row.visits), signups: num(row.signups), trials: num(row.trials),
+        subscriptions: num(row.subscriptions), spend: num(row.spend)
+      };
+    });
+  }
+  renderVals() {
+    const accent = this.props.accent ?? '#6045F5';
+    const fmt = (n) => Math.round(n).toLocaleString('en-US');
+    const pct = (a, b) => (b > 0 ? (a / b * 100).toFixed(1) + '%' : '—');
+    const onFile = (e) => {
+      const f = e && e.target && e.target.files && e.target.files[0];
+      if (!f) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const rows = this.parse(String(reader.result || ''));
+          this.setState({ status: 'ok', fileName: f.name, rows, error: '' });
+        } catch (err) {
+          this.setState({ status: 'error', fileName: f.name, rows: [], error: err.message });
+        }
+      };
+      reader.onerror = () => this.setState({ status: 'error', fileName: f.name, rows: [], error: 'تعذرت قراءة الملف.' });
+      reader.readAsText(f);
+    };
+    const rows = this.state.rows;
+    const sum = (k) => rows.reduce((a, r) => a + r[k], 0);
+    const V = sum('visits'), S = sum('signups'), T = sum('trials'), P = sum('subscriptions'), M = sum('spend');
+    const totals = [
+      { label: 'الزيارات', value: fmt(V) },
+      { label: 'التسجيلات', value: fmt(S) },
+      { label: 'نسبة التحويل', value: pct(S, V) },
+      { label: 'طلبات التجربة', value: fmt(T) },
+      { label: 'الاشتراكات', value: fmt(P) },
+      { label: 'تكلفة العميل المحتمل', value: S > 0 && M > 0 ? fmt(M / S) + ' ر.س' : '—' }
+    ];
+    const map = {};
+    rows.forEach((r) => { const c = map[r.channel] || (map[r.channel] = { name: r.channel, v: 0, s: 0 }); c.v += r.visits; c.s += r.signups; });
+    const list = Object.keys(map).map((k) => map[k]).sort((a, b) => b.s - a.s);
+    const max = list.reduce((m, c) => Math.max(m, c.s), 0) || 1;
+    const byChannel = list.map((c) => ({ name: c.name, signups: fmt(c.s), conv: pct(c.s, c.v), bar: 'height: 100%; border-radius: 6px; background: ' + accent + '; width: ' + Math.round(c.s / max * 100) + '%' }));
+    const preview = rows.slice(0, 8).map((r) => ({ date: r.date, channel: r.channel, visits: fmt(r.visits), signups: fmt(r.signups), subscriptions: fmt(r.subscriptions), spend: fmt(r.spend) }));
+    return {
+      accent, onFile, totals, byChannel, preview,
+      rowCount: fmt(rows.length),
+      isOk: this.state.status === 'ok',
+      isEmpty: this.state.status === 'empty',
+      isError: this.state.status === 'error',
+      error: this.state.error,
+      fileLabel: this.state.fileName ? 'الملف الحالي: ' + this.state.fileName : 'الحد الأقصى المقترح: 5 ميجابايت',
+      columns: [
+        { ar: 'التاريخ', en: 'date' }, { ar: 'القناة', en: 'channel' }, { ar: 'الزيارات', en: 'visits' },
+        { ar: 'التسجيلات', en: 'signups' }, { ar: 'التجارب', en: 'trials' }, { ar: 'الاشتراكات', en: 'subscriptions' }, { ar: 'المصروف', en: 'spend' }
+      ]
+    };
+  }
+}
+</script><script src="assets/dc.js"></script>
+</body>
+</html>

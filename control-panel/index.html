@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>منصت — تسجيل الدخول</title>
+
+
+<style>
+@font-face{font-family:"Azer";src:url(assets/fonts/Azer-300.woff) format("woff");font-weight:300;font-display:swap}
+@font-face{font-family:"Azer";src:url(assets/fonts/Azer-400.woff) format("woff");font-weight:400;font-display:swap}
+@font-face{font-family:"Azer";src:url(assets/fonts/Azer-500-700.woff) format("woff");font-weight:500 700;font-display:swap}
+@font-face{font-family:"Bukra";src:url(assets/fonts/Bukra-500.woff) format("woff");font-weight:500;font-display:swap}
+body{margin:0;background:#F5F4FB;line-height:1.5}
+a{color:#4C33DE}a:hover{color:#3A27B5}
+h1,h2{font-family:"Bukra","Azer","Segoe UI",Tahoma,sans-serif}
+.mlogo{background:currentColor;-webkit-mask:url(assets/munsit-logo.png) center/contain no-repeat;mask:url(assets/munsit-logo.png) center/contain no-repeat;aspect-ratio:560/213}
+</style>
+<link href="assets/munsit-logo.png" rel="icon"/></head>
+<body>
+<x-dc>
+
+<div dir="rtl" style="font-family: Azer, 'Segoe UI', Tahoma, sans-serif; color: #17142F; background: #F5F4FB; min-height: 100vh; display: flex; flex-wrap: wrap">
+<section style="flex: 1 1 420px; background: #6045F5; color: #fff; padding: 56px 48px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 360px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span aria-label="منصت Ministry" class="mlogo" role="img" style="display: block; width: 170px; color: #FFFFFF"></span>
+<span style="font-size: 13px; color: #EEEBFE">لوحة الفريق الداخلية</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 460px">
+<h1 style="margin: 0; font-size: 40px; line-height: 1.4; font-weight: 500">كل شغل التسويق والنمو في مكان واحد</h1>
+<p style="margin: 0; font-size: 17px; line-height: 1.8; color: #FFFFFF">تابعي الحملات والعملاء والتقارير، واعتمدي اقتراحات الوكيل الذكي — كل موظف بحسابه وصلاحياته.</p>
+</div>
+<span style="font-size: 13px; color: #EEEBFE">الدخول لفريق منصت فقط</span>
+</section>
+<section style="flex: 1 1 420px; display: flex; align-items: center; justify-content: center; padding: 48px 24px; box-sizing: border-box">
+<form style="width: 100%; max-width: 400px; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-size: 28px; font-weight: 500">تسجيل الدخول</h2>
+<p style="margin: 0; font-size: 15px; color: #77739A">ادخلي باسم المستخدم اللي وصلك من مدير الحساب</p>
+</div>
+
+<div data-if="showError" role="alert" style="background: #FCEBEE; color: #D93D52; border-radius: 12px; padding: 12px 16px; font-size: 14px; font-weight: 600">اسم المستخدم أو كلمة المرور غير صحيحة</div>
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="user" style="font-size: 14px; font-weight: 600">اسم المستخدم أو البريد</label>
+<input autocomplete="username" id="user" placeholder="مثال: noura.s" style="font-family: inherit; font-size: 15px; min-height: 48px; border: 1px solid #E5E2F4; border-radius: 12px; padding: 0 16px; background: #fff; color: #17142F; box-sizing: border-box" type="text"/>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; justify-content: space-between; align-items: center"><label for="pass" style="font-size: 14px; font-weight: 600">كلمة المرور</label><a href="#" style="font-size: 13px; font-weight: 600">نسيتها؟</a></div>
+<div style="display: flex; align-items: center; border: 1px solid #E5E2F4; border-radius: 12px; background: #fff">
+<input autocomplete="current-password" id="pass" placeholder="••••••••" style="flex: 1; font-family: inherit; font-size: 15px; min-height: 46px; border: 0; border-radius: 12px; padding: 0 16px; background: transparent; color: #17142F; min-width: 0" type="{{passType}}"/>
+<button aria-label="{{passLabel}}" data-on-click="{{togglePass}}" style="font-family: inherit; border: 0; background: transparent; min-width: 48px; min-height: 46px; cursor: pointer; color: #77739A" type="button">
+<svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+</button>
+</div>
+</div>
+<label style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: #47436A; min-height: 44px; cursor: pointer">
+<input style="width: 18px; height: 18px; accent-color: #6045F5" type="checkbox"/>
+تذكرني على هذا الجهاز
+</label>
+<a href="dashboard.html" style="display: flex; align-items: center; justify-content: center; min-height: 50px; border-radius: 12px; background: {{accent}}; color: #fff; text-decoration: none; font-size: 16px; font-weight: 700">دخول</a>
+<p style="margin: 0; font-size: 13px; color: #77739A; text-align: center; line-height: 1.7">ما عندك حساب؟ اطلبي من مدير الحساب يضيفك من صفحة «الفريق والصلاحيات».</p>
+</form>
+</section>
+</div>
+</x-dc>
+<script data-dc-script="" data-props='{"accent":{"editor":"color","default":"#6045F5","options":["#6045F5","#4C33DE","#7C66FF"]},"showError":{"editor":"boolean","default":false},"$preview":{"width":1440,"height":900}}' type="text/x-dc">
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { show: false }; }
+  renderVals() {
+    return {
+      accent: this.props.accent ?? '#6045F5',
+      showError: this.props.showError ?? false,
+      passType: this.state.show ? 'text' : 'password',
+      passLabel: this.state.show ? 'إخفاء كلمة المرور' : 'إظهار كلمة المرور',
+      togglePass: () => this.setState({ show: !this.state.show })
+    };
+  }
+}
+</script><script src="assets/dc.js"></script>
+</body>
+</html>
